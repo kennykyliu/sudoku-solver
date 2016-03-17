@@ -57,6 +57,7 @@ int main() {
             solFile << endl;
         }
         cout << endl << endl;
+        solFile.close();
     } else {
         cout << "Fail!!! This is not a valid sudoku board." << endl;
     }
