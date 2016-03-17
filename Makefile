@@ -13,4 +13,4 @@ Solver:
 	$(CC) -c sudoku-solver.cpp
 
 clean:
-	rm -f *.o *.out unitest-SudokuValidator sudoku-validator
+	rm -f *.o *.out unitest-SudokuValidator unitest-SudokuSolver sudoku-validator
