@@ -1,3 +1,5 @@
 unitest-SudokuValidator
+unitest-SudokuSolver
+sudoku-solution.txt
 *.o
 *.out
