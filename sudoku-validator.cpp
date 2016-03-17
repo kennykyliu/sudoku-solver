@@ -6,14 +6,19 @@ void clearVecHelper(vector<int>& vec) {
     }
 }
 
-bool verifySingleLine(vector<int>& board) {
+bool verifySingleLine(vector<int>& dataVec) {
     vector<bool> numExist(10, false);
 
-    for (int i = 0; i < board.size(); ++i) {
-        if (numExist[board[i]]) {
+    // Ignore index 0 because we don't use it
+    for (int i = 1; i < dataVec.size(); ++i) {
+        // Bypass value 0 due to availabe data is from 1 to 9
+        if (dataVec[i] == 0) {
+            continue;
+        }
+        if (numExist[dataVec[i]]) {
             return false;
         }
-        numExist[board[i]] = true;
+        numExist[dataVec[i]] = true;
     }
 
     return true;
